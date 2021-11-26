@@ -142,11 +142,12 @@ body {
 }
 
 #cookie-bar-prompt-content a, #cookie-bar a, #cookie-bar-prompt-content span {
-    text-decoration: none;
+    color:#fff;
+    text-decoration: underline;
 }
 
 #cookie-bar-prompt-content a:hover, #cookie-bar a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #cookie-bar-prompt-close span, #cookie-bar-prompt-logo span {
