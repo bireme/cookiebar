@@ -216,7 +216,7 @@ function setupCookieBar() {
     var userLang = detectLang();
 
     // Load CSS file
-    var theme = '';
+    var theme = '-vhl';
     if (getURLParameter('theme')) {
       theme = '-' + getURLParameter('theme');
     }
