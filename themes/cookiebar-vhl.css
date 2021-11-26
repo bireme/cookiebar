@@ -27,14 +27,13 @@ body {
     left: 0;
     line-height: 1.5;
     margin: 0;
-    padding: 15px 5px;
+    padding: 10px;
     position: fixed;
     width: 80%;
     z-index: 9999;
     bottom: 10px !important;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc45484d', endColorstr='#cc000000',GradientType=0 );
     margin-left: 10%;
-    border-radius: 10px;
 }
 
 #cookie-bar-prompt {
