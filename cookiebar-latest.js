@@ -25,7 +25,7 @@ var CookieLanguages = [
   'it',
   'nl',
   'no',
-  'oc',  
+  'oc',
   'pl',
   'pt',
   'ro',
@@ -82,7 +82,7 @@ function setupCookieBar() {
   var promptBtn;
   var promptClose;
   var promptNoConsent;
-  var startup = false;
+  var startup = true;
   var shutup = false;
 
   // Get the users current cookie selection
@@ -363,7 +363,7 @@ function setupCookieBar() {
   function detectLang() {
     var userLang = getURLParameter('forceLang');
     if (userLang === false) {
-      userLang = navigator.language || navigator.userLanguage;
+      userLang = document.documentElement.lang || navigator.language || navigator.userLanguage;
     }
     userLang = userLang.substr(0, 2);
     if (CookieLanguages.indexOf(userLang) < 0) {
