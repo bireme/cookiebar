@@ -84,6 +84,7 @@ function setupCookieBar() {
   var promptNoConsent;
   var startup = true;
   var shutup = false;
+  var noGeoIp = true;
 
   // Get the users current cookie selection
   var currentCookieSelection = getCookie();
@@ -114,7 +115,7 @@ function setupCookieBar() {
    */
 
   // Init cookieBAR without geoip localization, if it was explicitly disabled.
-  if (getURLParameter('noGeoIp')) {
+  if (noGeoIp || getURLParameter('noGeoIp')) {
     startup = true;
     initCookieBar();
   }
